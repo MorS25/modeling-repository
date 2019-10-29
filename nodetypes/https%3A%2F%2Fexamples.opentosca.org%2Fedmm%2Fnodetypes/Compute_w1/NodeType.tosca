@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Definitions targetNamespace="https://examples.opentosca.org/edmm/nodetypes" id="winery-defs-for_ntyIgeneral-Compute_w1" xmlns="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:selfservice="http://www.eclipse.org/winery/model/selfservice" xmlns:ns0="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:testwineryopentoscaorg="http://test.winery.opentosca.org">
+    <Import namespace="https://examples.opentosca.org/edmm/nodetypes/propertiesdefinition/winery" location="../imports/http%253A%252F%252Fwww.w3.org%252F2001%252FXMLSchema/https%253A%252F%252Fexamples.opentosca.org%252Fedmm%252Fnodetypes%252Fpropertiesdefinition%252Fwinery/properties/properties.xsd" importType="http://www.w3.org/2001/XMLSchema" ns0:wpd="true"/>
+    <NodeType name="Compute_w1" targetNamespace="https://examples.opentosca.org/edmm/nodetypes">
+        <ns0:PropertiesDefinition elementname="properties" namespace="https://examples.opentosca.org/edmm/nodetypes/propertiesdefinition/winery">
+            <ns0:properties>
+                <ns0:key>os_family</ns0:key>
+                <ns0:type>xsd:string</ns0:type>
+            </ns0:properties>
+            <ns0:properties>
+                <ns0:key>machine_image</ns0:key>
+                <ns0:type>xsd:string</ns0:type>
+            </ns0:properties>
+            <ns0:properties>
+                <ns0:key>instance_type</ns0:key>
+                <ns0:type>xsd:string</ns0:type>
+            </ns0:properties>
+            <ns0:properties>
+                <ns0:key>key_name</ns0:key>
+                <ns0:type>xsd:string</ns0:type>
+            </ns0:properties>
+            <ns0:properties>
+                <ns0:key>public_key</ns0:key>
+                <ns0:type>xsd:string</ns0:type>
+            </ns0:properties>
+        </ns0:PropertiesDefinition>
+        <Interfaces>
+            <Interface name="http://opentosca.org/interfaces/lifecycle">
+                <Operation name="configure"/>
+            </Interface>
+        </Interfaces>
+    </NodeType>
+</Definitions>
