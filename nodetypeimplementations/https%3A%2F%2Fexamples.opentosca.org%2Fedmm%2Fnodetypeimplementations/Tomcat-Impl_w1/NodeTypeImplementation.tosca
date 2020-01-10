@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Definitions targetNamespace="https://examples.opentosca.org/edmm/nodetypeimplementations" id="winery-defs-for_ntyiIgeneral-Tomcat-Impl_w1" xmlns="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:selfservice="http://www.eclipse.org/winery/model/selfservice" xmlns:ns0="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:testwineryopentoscaorg="http://test.winery.opentosca.org">
-    <NodeTypeImplementation targetNamespace="https://examples.opentosca.org/edmm/nodetypeimplementations" name="Tomcat-Impl_w1" abstract="no" final="no" nodeType="ntyIgeneral:Tomcat_w1" xmlns:ntyIgeneral="https://examples.opentosca.org/edmm/nodetypes">
-        <ImplementationArtifacts>
-            <ImplementationArtifact name="create" interfaceName="http://opentosca.org/interfaces/lifecycle" operationName="create" artifactType="ToscaBaseTypes:ScriptArtifact" artifactRef="ateIgeneral:Tomcat-Create-IA_w1" xmlns:ateIgeneral="https://examples.opentosca.org/edmm/artifacttemplates" xmlns:ToscaBaseTypes="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaBaseTypes"/>
-        </ImplementationArtifacts>
-    </NodeTypeImplementation>
-</Definitions>

@@ -62,6 +62,15 @@
     "generatedNamespace" : false,
     "patternCollection" : false
   },
+  "https://edmm.uni-stuttgart.de/nodetypes" : {
+    "namespace" : "https://edmm.uni-stuttgart.de/nodetypes",
+    "prefix" : "ntyIgeneral2",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "secureCollection" : false,
+    "generatedNamespace" : false,
+    "patternCollection" : false
+  },
   "http://www.w3.org/2001/XMLSchema" : {
     "namespace" : "http://www.w3.org/2001/XMLSchema",
     "prefix" : "xsd",
@@ -110,6 +119,15 @@
   "http://test.winery.opentosca.org" : {
     "namespace" : "http://test.winery.opentosca.org",
     "prefix" : "testwineryopentoscaorg",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "secureCollection" : false,
+    "generatedNamespace" : false,
+    "patternCollection" : false
+  },
+  "https://edmm.uni-stuttgart.de/relationtypes" : {
+    "namespace" : "https://edmm.uni-stuttgart.de/relationtypes",
+    "prefix" : "tyIgeneral",
     "readableName" : "",
     "upstreamRepository" : "",
     "secureCollection" : false,
@@ -263,6 +281,15 @@
   "http://www.eclipse.org/winery/model/selfservice" : {
     "namespace" : "http://www.eclipse.org/winery/model/selfservice",
     "prefix" : "selfservice",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "secureCollection" : false,
+    "generatedNamespace" : false,
+    "patternCollection" : false
+  },
+  "https://edmm.uni-stuttgart.de/artifacttemplates" : {
+    "namespace" : "https://edmm.uni-stuttgart.de/artifacttemplates",
+    "prefix" : "ateIgeneral1",
     "readableName" : "",
     "upstreamRepository" : "",
     "secureCollection" : false,
