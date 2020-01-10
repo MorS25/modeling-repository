@@ -7,7 +7,7 @@
                     <DeploymentArtifact xmlns:atyIgeneral="https://edmm.uni-stuttgart.de/artifacttypes" xmlns:ateIgeneral1="https://edmm.uni-stuttgart.de/artifacttemplates" name="war" artifactType="atyIgeneral:WAR" artifactRef="ateIgeneral1:PetClinic-App"/>
                 </DeploymentArtifacts>
             </NodeTemplate>
-            <NodeTemplate xmlns:ntyIgeneral="https://edmm.uni-stuttgart.de/nodetypes" name="ubuntu" minInstances="1" maxInstances="1" type="ntyIgeneral:Compute" id="Compute" winery:x="586" winery:y="742">
+            <NodeTemplate xmlns:ntyIgeneral="https://edmm.uni-stuttgart.de/nodetypes" name="ubuntu" minInstances="1" maxInstances="1" type="ntyIgeneral:Compute" id="Compute" winery:x="585" winery:y="667">
                 <Properties>
                     <Properties xmlns="http://www.example.org">
                         <os_family>linux</os_family>
@@ -19,13 +19,6 @@ MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqGKukO1De7zhZj6+H0qtjTkVxwTCpvKe4eCZ0
 FPqri0cb2JZfXJ/DgYSF6vUpwmJG8wVQZKjeGcjDOL5UlsuusFncCzWBQ7RKNUSesmQRMSGkVb1/
 3j+skZ6UtW+5u09lHNsj6tQ51s1SPrCBkedbNf0Tp0GbMJDyR4e9T04ZZwIDAQAB
 -----END PUBLIC KEY-----</public_key>
-                    </Properties>
-                </Properties>
-            </NodeTemplate>
-            <NodeTemplate xmlns:ntyIgeneral="https://edmm.uni-stuttgart.de/nodetypes" name="pet_clinic_tomcat" minInstances="1" maxInstances="1" type="ntyIgeneral:Tomcat" id="Tomcat_2" winery:x="351" winery:y="402">
-                <Properties>
-                    <Properties xmlns="http://www.example.org">
-                        <port>8080</port>
                     </Properties>
                 </Properties>
             </NodeTemplate>
@@ -49,14 +42,13 @@ FPqri0cb2JZfXJ/DgYSF6vUpwmJG8wVQZKjeGcjDOL5UlsuusFncCzWBQ7RKNUSesmQRMSGkVb1/
                     <DeploymentArtifact xmlns:atyIgeneral="https://edmm.uni-stuttgart.de/artifacttypes" xmlns:ateIgeneral1="https://edmm.uni-stuttgart.de/artifacttemplates" name="sql" artifactType="atyIgeneral:SQL" artifactRef="ateIgeneral1:Petclinic-Schema"/>
                 </DeploymentArtifacts>
             </NodeTemplate>
-            <RelationshipTemplate xmlns:tyIgeneral="https://edmm.uni-stuttgart.de/relationtypes" name="HostedOn" type="tyIgeneral:HostedOn" id="con_HostedOn_0">
-                <SourceElement ref="Tomcat_2"/>
-                <TargetElement ref="Compute"/>
-            </RelationshipTemplate>
-            <RelationshipTemplate xmlns:tyIgeneral="https://edmm.uni-stuttgart.de/relationtypes" name="HostedOn" type="tyIgeneral:HostedOn" id="con_HostedOn_2">
-                <SourceElement ref="PetClinic"/>
-                <TargetElement ref="Tomcat_2"/>
-            </RelationshipTemplate>
+            <NodeTemplate xmlns:ntyIgeneral="https://edmm.uni-stuttgart.de/nodetypes" name="pet_clinic_tomcat" minInstances="1" maxInstances="1" type="ntyIgeneral:Tomcat" id="Tomcat" winery:x="349" winery:y="402">
+                <Properties>
+                    <Properties xmlns="http://www.example.org">
+                        <port>8080</port>
+                    </Properties>
+                </Properties>
+            </NodeTemplate>
             <RelationshipTemplate xmlns:tyIgeneral="https://edmm.uni-stuttgart.de/relationtypes" name="HostedOn" type="tyIgeneral:HostedOn" id="con_HostedOn_1">
                 <SourceElement ref="MySQL_DBMS"/>
                 <TargetElement ref="Compute"/>
@@ -68,6 +60,14 @@ FPqri0cb2JZfXJ/DgYSF6vUpwmJG8wVQZKjeGcjDOL5UlsuusFncCzWBQ7RKNUSesmQRMSGkVb1/
             <RelationshipTemplate xmlns:tyIgeneral="https://edmm.uni-stuttgart.de/relationtypes" name="ConnectsTo" type="tyIgeneral:ConnectsTo" id="con_ConnectsTo_0">
                 <SourceElement ref="PetClinic"/>
                 <TargetElement ref="MySQL_Database"/>
+            </RelationshipTemplate>
+            <RelationshipTemplate xmlns:tyIgeneral="https://edmm.uni-stuttgart.de/relationtypes" name="HostedOn" type="tyIgeneral:HostedOn" id="con_HostedOn_0">
+                <SourceElement ref="Tomcat"/>
+                <TargetElement ref="Compute"/>
+            </RelationshipTemplate>
+            <RelationshipTemplate xmlns:tyIgeneral="https://edmm.uni-stuttgart.de/relationtypes" name="HostedOn" type="tyIgeneral:HostedOn" id="con_HostedOn_2">
+                <SourceElement ref="PetClinic"/>
+                <TargetElement ref="Tomcat"/>
             </RelationshipTemplate>
         </TopologyTemplate>
     </ServiceTemplate>
