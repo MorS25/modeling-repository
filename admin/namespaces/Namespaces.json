@@ -64,7 +64,7 @@
   },
   "https://edmm.uni-stuttgart.de/nodetypes" : {
     "namespace" : "https://edmm.uni-stuttgart.de/nodetypes",
-    "prefix" : "ntyIgeneral2",
+    "prefix" : "ntyIgeneral",
     "readableName" : "",
     "upstreamRepository" : "",
     "secureCollection" : false,
@@ -74,15 +74,6 @@
   "http://www.w3.org/2001/XMLSchema" : {
     "namespace" : "http://www.w3.org/2001/XMLSchema",
     "prefix" : "xsd",
-    "readableName" : "",
-    "upstreamRepository" : "",
-    "secureCollection" : false,
-    "generatedNamespace" : false,
-    "patternCollection" : false
-  },
-  "https://examples.opentosca.org/edmm/nodetypes/propertiesdefinition/winery" : {
-    "namespace" : "https://examples.opentosca.org/edmm/nodetypes/propertiesdefinition/winery",
-    "prefix" : "ntypdInodetypes",
     "readableName" : "",
     "upstreamRepository" : "",
     "secureCollection" : false,
@@ -110,6 +101,15 @@
   "http://opentosca.org/servicetemplates" : {
     "namespace" : "http://opentosca.org/servicetemplates",
     "prefix" : "servicetemplates",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "secureCollection" : false,
+    "generatedNamespace" : false,
+    "patternCollection" : false
+  },
+  "https://edmm.uni-stuttgart.de/nodetypes/propertiesdefinition/winery" : {
+    "namespace" : "https://edmm.uni-stuttgart.de/nodetypes/propertiesdefinition/winery",
+    "prefix" : "ntypdInodetypes",
     "readableName" : "",
     "upstreamRepository" : "",
     "secureCollection" : false,
@@ -206,15 +206,6 @@
     "generatedNamespace" : false,
     "patternCollection" : false
   },
-  "https://examples.opentosca.org/edmm/nodetypes" : {
-    "namespace" : "https://examples.opentosca.org/edmm/nodetypes",
-    "prefix" : "ntyIgeneral",
-    "readableName" : "",
-    "upstreamRepository" : "",
-    "secureCollection" : false,
-    "generatedNamespace" : false,
-    "patternCollection" : false
-  },
   "http://opentosca.org/nodetypes" : {
     "namespace" : "http://opentosca.org/nodetypes",
     "prefix" : "nodetypes",
@@ -254,6 +245,15 @@
   "http://docs.oasis-open.org/tosca/ns/2011/12/ToscaBaseTypes" : {
     "namespace" : "http://docs.oasis-open.org/tosca/ns/2011/12/ToscaBaseTypes",
     "prefix" : "ToscaBaseTypes",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "secureCollection" : false,
+    "generatedNamespace" : false,
+    "patternCollection" : false
+  },
+  "https://edmm.uni-stuttgart.de/servicetemplates" : {
+    "namespace" : "https://edmm.uni-stuttgart.de/servicetemplates",
+    "prefix" : "steIgeneral2",
     "readableName" : "",
     "upstreamRepository" : "",
     "secureCollection" : false,
@@ -308,6 +308,15 @@
   "http://opentosca.org/nodetypes/propertiesdefinition/winery" : {
     "namespace" : "http://opentosca.org/nodetypes/propertiesdefinition/winery",
     "prefix" : "otntypdInodetypes",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "secureCollection" : false,
+    "generatedNamespace" : false,
+    "patternCollection" : false
+  },
+  "https://edmm.uni-stuttgart.de/nodetypeimplementations" : {
+    "namespace" : "https://edmm.uni-stuttgart.de/nodetypeimplementations",
+    "prefix" : "ntyiIgeneral1",
     "readableName" : "",
     "upstreamRepository" : "",
     "secureCollection" : false,
